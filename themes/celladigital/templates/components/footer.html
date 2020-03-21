@@ -1,0 +1,55 @@
+<footer class="ftco-footer ftco-section">
+<div class="container">
+<div class="row mb-5">
+<div class="col-md">
+<div class="ftco-footer-widget mb-4">
+<h2 class="ftco-heading-2">Cella Mission</h2>
+<p>We help dentist and cosmetic surgeon launch their website and do their digital marketing to acquire more patients.</p>
+<ul class="ftco-footer-social list-unstyled float-md-left float-lft mt-5">
+{% for (icon, url) in SOCIAL %}
+    <li class="ftco-animate"><a href="{{ url }}"><span class="icon-{{ icon }}"></span></a></li>
+{% endfor %}
+</ul>
+</div>
+</div>
+<div class="col-md">
+<div class="ftco-footer-widget mb-4 ml-md-4">
+<h2 class="ftco-heading-2">Links</h2>
+<ul class="list-unstyled">
+{% for (title, url) in LINKS %}
+    <li><a href="{{ url }}"><span class="icon-long-arrow-right mr-2"></span>{{ title }}</a></li>
+{% endfor %}
+</ul>
+</div>
+</div>
+<div class="col-md">
+<div class="ftco-footer-widget mb-4">
+<h2 class="ftco-heading-2">Services</h2>
+<ul class="list-unstyled">
+<li><a href="#"><span class="icon-long-arrow-right mr-2"></span>Digital Marketing</a></li>
+<li><a href="#"><span class="icon-long-arrow-right mr-2"></span>Web Design</a></li>
+<li><a href="#"><span class="icon-long-arrow-right mr-2"></span>Web Maintenance</a></li>
+</ul>
+</div>
+</div>
+<div class="col-md">
+<div class="ftco-footer-widget mb-4">
+<h2 class="ftco-heading-2">Have a Questions?</h2>
+<div class="block-23 mb-3">
+<ul>
+<li><a href="tel:+92-309-2293-073"><span class="icon icon-phone"></span><span class="text">+92-309-2293-073</span></a></li>
+<li><a href="mailto:&#105;&#110;&#102;&#111;&#64;&#99;&#101;&#108;&#108;&#97;&#100;&#105;&#103;&#105;&#116;&#97;&#108;&#46;&#99;&#111;&#109;"><span class="icon icon-envelope"></span><span class="text"><span class="__cf_email__">&#105;&#110;&#102;&#111;&#64;&#99;&#101;&#108;&#108;&#97;&#100;&#105;&#103;&#105;&#116;&#97;&#108;&#46;&#99;&#111;&#109;</span></span></a></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="row">
+<div class="col-md-12 text-center">
+<p>
+&copy; {{ CURRENTYEAR }} Cella Digital
+</p>
+</div>
+</div>
+</div>
+</footer>

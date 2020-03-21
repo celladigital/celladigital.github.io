@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="{{ DEFAULT_LANG }}">
+
+<head>
+    <meta charset="utf-8" />
+    <title>{% block title %}{{ SITENAME }}{% endblock %}</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="We help dentist and cosmetic surgeon launch their website and get more patients.">
+
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="https://celladigital.com" />
+    <meta property="og:title" content="Digital Marketing and Website for Cosmetic Surgeon and Dentist | Cella Digital" />
+    <meta property="og:image" content="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/images/facebook-cover.png" />
+    <meta property="og:description" content="We help dentist and cosmetic surgeon launch their website and get more patients." />
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@celladigital">
+    <meta name="twitter:creator" content="@celaldigital">
+    <meta name="twitter:title" content="Digital Marketing and Website for Cosmetic Surgeon and Dentist | Cella Digital" />
+    <meta name="twitter:description" content="We help dentist and cosmetic surgeon launch their website and get more patients." />
+    <meta name="twitter:image" content="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/images/facebook-cover.png" />
+
+    <link rel="apple-touch-icon" sizes="180x180" href="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/images/favicon-16x16.png">
+    <link rel="manifest" href="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/site.webmanifest">
+
+    <link rel="stylesheet" href="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/css/{{ CSS_FILE }}" />
+    {% if FEED_ALL_ATOM %}
+    <link href="{{ FEED_DOMAIN }}/{{ FEED_ALL_ATOM }}" type="application/atom+xml" rel="alternate"
+        title="{{ SITENAME }} Atom Feed" />
+    {% endif %}
+    {% if FEED_ALL_RSS %}
+    <link href="{{ FEED_DOMAIN }}/{{ FEED_ALL_RSS }}" type="application/rss+xml" rel="alternate"
+        title="{{ SITENAME }} RSS Feed" />
+    {% endif %}
+
+    <!--[if IE]>
+        <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+</head>
+
+<body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
+
+    {% include "components/header.html" %}
+
+    {% block body %}{% endblock body %}
+
+    {% include "components/footer.html" %}
+    {% include "components/hubspot.html" %}
+    {% include "components/google-tracking.html" %}
+    {% include "components/loader.html" %}
+
+
+    <script src="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/js/jquery.min.js"></script>
+    <script src="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/js/jquery-migrate-3.0.1.min.js"></script>
+    <script src="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/js/popper.min.js"></script>
+    <script src="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/js/bootstrap.min.js"></script>
+    <script src="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/js/jquery.easing.1.3.js"></script>
+    <script src="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/js/jquery.waypoints.min.js"></script>
+    <script src="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/js/jquery.stellar.min.js"></script>
+    <script src="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/js/owl.carousel.min.js"></script>
+    <script src="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/js/jquery.magnific-popup.min.js"></script>
+    <script src="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/js/aos.js"></script>
+    <script src="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/js/jquery.animateNumber.min.js"></script>
+    <script src="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/js/scrollax.min.js"></script>
+
+    <script src="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/js/main.js"></script>
+
+</body>
+
+</html>
