@@ -1,0 +1,20 @@
+@import url(//fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900);
+@import url("open-iconic-bootstrap.min.css");
+@import url("animate.css");
+
+@import url("owl.carousel.min.css");
+@import url("owl.theme.default.min.css");
+@import url("magnific-popup.css");
+
+@import url("aos.css");
+
+@import url("ionicons.min.css");
+
+@import url("flaticon.css");
+@import url("icomoon.css");
+@import url("style.css");
+
+.navbar-brand img {
+    height: 30px;
+    width: 157px;
+}
